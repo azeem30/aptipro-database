@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aptipro-mysql
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: MYSQL_ROOT_PASSWORD
+        value: Azeem@123
+      - key: MYSQL_DATABASE
+        value: aptipro
